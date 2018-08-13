@@ -14,5 +14,22 @@
 
 
 <ion-content padding>
+    <ion-list>
+
+        <ion-item>
+          <ion-label>Resumen</ion-label>
+          <ion-input type="text" value="" [(ngModel)]="noticia.resumen"></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label>Descripcion</ion-label>
+          <ion-input type="text" value="" [(ngModel)]="noticia.descripcion"></ion-input>
+        </ion-item>
+      
+      </ion-list>
+      
+      <div padding>
+        <button ion-button block (click)="guardarNoticia()">Guardar Noticia</button>  </div>
+
 
 </ion-content>
